@@ -1,17 +1,16 @@
 import _ from 'lodash';
-import './style.css';
-import Plato from './Plato.jpg';
+import printMe from './print';
 
 function component() {
 	const element = document.createElement('div');
-	const platoPng = new Image();
+	const button = document.createElement('button');
 
 	element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-	element.classList.add('hello');
 
-	platoPng.src = Plato;
+	button.innerHTML = 'Click me and check the console!';
+	button.onclick = printMe;
 
-	element.appendChild(platoPng);
+	element.appendChild(button);
 
 	return element;
 }
