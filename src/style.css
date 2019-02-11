@@ -1,4 +1,12 @@
+@font-face {
+	font-family: 'RobotoRegular';
+	src: url('./Roboto-Regular.ttf') format('ttf');
+	font-weight: 500;
+	font-style: normal;
+}
+
 .hello {
 	color: olivedrab;
+	font-family: 'RobotoRegular';
 	background: url('./Plato.jpg');
 }
